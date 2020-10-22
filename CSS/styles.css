@@ -140,21 +140,41 @@ h3 {
     list-style: none;
 }
 
-.list li {
+/* .list li {
     display: inline-block;
-}
+} */
 
 /* Навигация */
 
-.contacts {
+/* .contacts {
     display: flex;
-}
+} */
 
-.pagination {
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: var(--white);
 }
 
+.header-containerr {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+     margin-right: auto;
+}
+
 /* Logo */
+
+.header .logo {
+    margin-right: 93px;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -169,11 +189,15 @@ h3 {
 
 /* Site nav */
 
-.site-nav .link {
-    display: block;
+/* .site-nav .link {
+
     padding-top: 32px;
     padding-bottom: 32px;
-}
+} */
+
+.site-nav {
+    display: inline-flex;
+    }
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -191,11 +215,17 @@ h3 {
     color: var(--accent-color);
 }
 
-.contacts .link {
+/* .contacts .link {
     display: flex;
     /* padding-top: 32px;
     padding-bottom: 32px; */
-}
+} */
+ 
+.mail {
+    margin-left: 331px;
+} 
+
+
 
 .mail:hover,
 .mail:focus {
