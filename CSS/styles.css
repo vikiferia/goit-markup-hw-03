@@ -127,8 +127,7 @@ p {
     color: var(--main-text-color);
 }
 
-.link {
-    /* display: inline-block; */
+.link {    
     color: inherit;
     text-decoration: none;
 }
@@ -200,23 +199,18 @@ p {
 
 .contacts {
     display: inline-flex;
-    /* margin-left: 331px; */
 }
 
 .contacts .item:not(:last-child) {
     margin-right: 50px;
 }
 
-.mail .link:hover,
-.mail .link:focus {
+.mail:hover,
+.mail:focus {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-}
-
-.contacts .link {
-    color: var(--black);
 }
 
 .phone:hover,
@@ -231,19 +225,14 @@ p {
 
 .hero {
     text-align: center;
-    /* align-items: center; */
     background-color: var(--dark-bg);
 }
 
-/* .hero-container {
-    align-items: center;
-    background-color: var(--dark-bg);
-} */
 
 .hero-content {
-    text-align: center;
-    align-items: center;
-}
+    display: flex;
+    justify-content: center;
+   
 
 .hero-title {
     font-weight: 900;
@@ -427,11 +416,39 @@ p {
 }
 
 /* Страница Портфолио */
-.main-portfolio {
+
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--white);
 }
 
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
 /* Фильтры */
+
+.portfolio-container li {
+    width: 370px;
+}
+
+.button-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-portfolio .button-filter:not(:last-child) {
+    margin-right: 8px;
+}
 
 .button-filter {
     font-family: inherit;
@@ -450,6 +467,16 @@ p {
 .button-filter:visited {
     background-color: var(--light-bg);
     color: var(--black);
+}
+
+.grid-portfolio {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-title {
