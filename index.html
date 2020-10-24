@@ -27,42 +27,48 @@
                         <li class="site-nav item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                         <li class="site-nav item"><a href="" class="link">Контакты</a></li>
                     </ul>
-                    <ul class="contacts list">
-                        <li class="site-nav item"><a href="mailto:info@devstudio.com"
-                                class="mail link">info@devstudio.com</a> </li>
-                        <li class="site-nav item"><a href="tel:+380961111111" class="phone link">+38 096 111 11
-                                11</a></li>
-                    </ul>
                 </div>
             </nav>
+            <div class="contacts">
+                <ul class="contacts list">
+                    <li class="contacts item"><a href="mailto:info@devstudio.com"
+                            class="mail link">info@devstudio.com</a> </li>
+                    <li class="contacts item"><a href="tel:+380961111111" class="phone link">+38 096 111 11
+                            11</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
         <!--Секция главной шапки с кнопкой Заказа Герой-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                </div>
+                <button type="button" class="button">Заказать услугу</button>
+            </div>
         </section>
 
 
         <!--Особенности-->
-        <section class="section">
-            <div class="container">
-                <ul class="features-list list">
-                    <li>
+        <section class="section-features">
+            <div class="container features-container">
+                <ul class="list features-list">
+                    <li class="contant-box">
                         <h2 class="section-title-features">Внимание к деталям</h2>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="contant-box">
                         <h2 class="section-title-features">Пунктуальность</h2>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="contant-box">
                         <h2 class="section-title-features">Планирование</h2>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="contant-box">
                         <h2 class="section-title-features">Современные технологии</h2>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -71,14 +77,16 @@
         </section>
 
         <!--Чем занимаемся-->
-        <section class="section">
-            <div class="container">
+        <section class="section-work">
+            <div class="container work-container">
                 <h3 class="section-title">Чем мы занимаемся</h3>
                 <div class="foto-work">
-                    <ul class="list">
-                        <li><img src="./images/box1.jpg" alt="box1" width="370" /></li>
-                        <li><img src="./images/box2.jpg" alt="box2" width="370" height="294" /></li>
-                        <li><img src="./images/box3.png" alt="box3" width="370" /></li>
+                    <ul class="list grid">
+                        <li class="grid-item gallery-item"><img src="./images/box1.jpg" alt="box1" width="370" /></li>
+                        <li class="grid-item gallery-item"><img src="./images/box2.jpg" alt="box2" width="370"
+                                height="294" />
+                        </li>
+                        <li class="grid-item gallery-item"><img src="./images/box3.png" alt="box3" width="370" /></li>
                     </ul>
                 </div>
             </div>
@@ -86,32 +94,33 @@
 
         <!--Наша команда-->
         <section class="section-team">
-            <div class="container">
+            <div class="container team-container">
                 <h3 class="section-title">Наша команда</h3>
-                <ul class="container-team list">
-                    <li>
+                <ul class="list grid">
+                    <li class="grid-item gallery-team">
                         <img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" />
-                        <div class="container-team-person">
+                        <div class="team-person">
                             <h3 class="time">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="grid-item gallery-team">
                         <img src="./images/img2.jpg" alt="Ольга Репина" width="270" />
-                        <div class="container-team-person">
+                        <div class="team-person">
                             <h3 class="time">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="grid-item gallery-team">
                         <img src="./images/img3.jpg" alt="Николай Тарасов" width="270" />
-                        <div class="container-team-person">
+                        <div class="team-person">
                             <h3 class="time">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
                         </div>
                     </li>
-                    <li> <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
-                        <div class="container-team-person">
+                    <li class="grid-item gallery-team">
+                        <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
+                        <div class="team-person">
                             <h3 class="time">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
                         </div>
@@ -123,13 +132,13 @@
 
     <!--Футер-->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <a class="logo link" href="./index.html">
                 <span class="logo-web">Web</span><span class="logo-studio-wight">Studio</span>
             </a>
             <address class="footer-list">
                 <span class="map">г. Киев, пр-т Леси Украинки, 26</span><br />
-                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a><br />
+                <a class="footer-mail" href="mailto:info@devstudio.com" class="link">info@devstudio.com</a><br />
                 <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </address>
         </div>
