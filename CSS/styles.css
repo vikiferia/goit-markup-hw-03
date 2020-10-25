@@ -108,6 +108,7 @@ p {
     --main-bg: #e5e5e5;
     --light-bg: #f5f4fa;
     --dark-bg: #2f303a;
+    --line: #eeeeee;
 }
 
 .container {
@@ -133,7 +134,7 @@ p {
 }
 
 .list {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0;
     margin: 0;
     list-style: none;
@@ -142,8 +143,6 @@ p {
 /* Навигация */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     background-color: var(--white);
 }
 
@@ -151,6 +150,10 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ececec;
+    font-weight: 500;
 }
 
 .navigation {
@@ -164,6 +167,10 @@ p {
 .header .logo {
     margin-right: 93px;
 }
+
+/* .header .link {
+    list-style-type: none;
+} */
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -240,7 +247,7 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
-    padding-top: 232px;
+    padding-top: 200px;
     margin-bottom: 30px;
     max-width: 696px;
     text-align: center;
@@ -266,6 +273,10 @@ p {
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--white);
+}
+
+.hero-container .button {
+    margin-bottom: 200px;
 }
 
 /* Особенности */
@@ -313,17 +324,15 @@ p {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
     margin-left: -30px;
-    margin-right: -30px;
-}
-
-.grid-item {
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: -30px;
 }
 
 .gallery-item {
     flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 /* Команда */
@@ -333,21 +342,28 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .team-container li {
     width: 270px;
 }
 
 .gallery-team {
     flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    /* width: calc((100% - 30px) / 4); */
 }
 
 .team-person {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    letter-spacing: 0.03em;
     width: 270px;
 }
 
@@ -377,22 +393,24 @@ p {
 
 .profession {
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.19;
     text-align: center;
 }
 
 /* ФУТЕР */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--dark-bg);
     color: var(--footer-text-accent);
 }
 
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+/* .footer-container {
+    display: inline;
+} */
 
 .footer .logo {
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -406,6 +424,7 @@ p {
 }
 
 .map {
+    display: inline-block;
     margin-bottom: 9px;
     color: var(--white);
 }
@@ -450,19 +469,28 @@ p {
 }
 
 .button-filter {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     background-color: var(--light-bg);
     color: var(--black);
+    border: 0;
+    border-radius: 4px;
 }
 
 .button-filter:hover,
 .button-filter:focus {
     background-color: var(--accent-color);
     color: var(--white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .button-filter:visited {
     background-color: var(--light-bg);
     color: var(--black);
@@ -478,11 +506,24 @@ p {
     flex-basis: calc(100% / 3 - 30px);
 }
 
+/* .grid-img {
+    margin-bottom: 20px;
+} */
+
+.project {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 1px solid var(--line);
+}
+
 .project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     color: var(--black);
 }
 
