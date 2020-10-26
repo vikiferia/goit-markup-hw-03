@@ -91,13 +91,10 @@ img {
     height: auto;
 }
 
-h1,
-h2,
-h3,
-p {
+/* p {
     margin-top: 0;
     margin-bottom: 0;
-}
+} */
 
 :root {
     --main-text-color: rgba(117, 117, 117, 1);
@@ -200,6 +197,7 @@ p {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+    padding: 0;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -246,6 +244,7 @@ p {
     text-transform: uppercase;
     color: var(--white);
     padding-top: 200px;
+    margin-top: 0;
     margin-bottom: 30px;
     max-width: 696px;
     text-align: center;
@@ -294,6 +293,11 @@ p {
     width: calc((100% -90px) / 4);
 }
 
+.contant-box p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .features-list .contant-box:not(:last-child) {
     margin-right: 30px;
 }
@@ -303,6 +307,7 @@ p {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: 10px;
     color: var(--black);
 }
@@ -352,8 +357,11 @@ p {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
-    /* width: calc((100% - 30px) / 4); */
+.gallery-team p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .team-person {
@@ -366,6 +374,7 @@ p {
 }
 
 .section-title {
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
@@ -378,6 +387,7 @@ p {
 }
 
 .time {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -521,6 +531,7 @@ p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
     margin-bottom: 4px;
     color: var(--black);
 }
@@ -528,4 +539,6 @@ p {
 .project-subtitle {
     font-size: 16px;
     line-height: 1.87;
+    margin-top: 0;
+    margin-bottom: 0;
 }
